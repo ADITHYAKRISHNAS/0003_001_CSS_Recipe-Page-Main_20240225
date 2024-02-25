@@ -1,0 +1,66 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+/* ||RESET|| */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+/* ||VARIABLE|| */
+
+:root{
+
+    /* FONT */
+    --FF: "Outfit", sans-serif;
+    --FF-HEADINGS: "Young Serif",serif; 
+
+    --FS:1rem;
+    --FS-HEADING-ONE:3rem;
+    --FS-HEADING-TWO:2rem;
+    --FS-HEADING-THREE:1.5rem;
+
+    --FW:400;
+    --FW-TWO:600;
+    --FW-THREE:700;
+
+    /* COLOR */
+    --BACKGROUND-COLOR-BODY:hsl(30, 54%, 90%);
+    --BACKGROUND-COLOR-CONTENT:hsl(30, 18%, 87%);
+    --BACKGROUND-COLOR-CONTENT-SMALL:hsl(330, 100%, 98%);
+
+    --FONT-COLOR-HEADING:hsl(14, 45%, 36%);
+    --FONT-COLOR-HEADING-TWO: hsl(332, 51%, 32%);
+    --FONT-COLOR-PARAGRAPH:hsl(30, 10%, 34%);
+    --FONT-COLOR-PARAGHRAPH-STRONG:hsl(24, 5%, 18%);
+
+
+
+}
+
+
+/* ||UTILITY|| */
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+
+
