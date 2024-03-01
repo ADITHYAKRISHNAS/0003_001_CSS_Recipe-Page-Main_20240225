@@ -15,11 +15,14 @@ img{
     display:block;
     max-width: 100%;
     height: auto;
+    border-radius: var(--BORDER-RADIUS);
+    margin-bottom: 2em;
 }
 
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    /* margin-top: 0; */
   }
 
 
@@ -32,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
     --FF-HEADINGS: "Young Serif",serif; 
 
     --FS:1rem;
-    --FS-HEADING-ONE:3rem;
+    --FS-HEADING-ONE:2.5rem;
     --FS-HEADING-TWO:2rem;
     --FS-HEADING-THREE:1.5rem;
 
@@ -43,6 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
     /* COLOR */
     --BACKGROUND-COLOR-BODY:hsl(30, 54%, 90%);
     --BACKGROUND-COLOR-CONTENT:hsl(30, 18%, 87%);
+    --BACKGROUND-COLOR-CONTENT-BODY:hsl(0, 0%, 100%);
     --BACKGROUND-COLOR-CONTENT-SMALL:hsl(330, 100%, 98%);
 
     --FONT-COLOR-HEADING:hsl(14, 45%, 36%);
@@ -50,6 +54,16 @@ p, h1, h2, h3, h4, h5, h6 {
     --FONT-COLOR-PARAGRAPH:hsl(30, 10%, 34%);
     --FONT-COLOR-PARAGHRAPH-STRONG:hsl(24, 5%, 18%);
 
+    --LINE-COLOR:hsla(30, 1%, 63%, 0.831);
+
+    /* BORDER */
+
+    --BORDER-RADIUS:1em;
+
+
+    /* LINE */
+    --BORDR-BOTTEM-LINE:1px solid var(--LINE-COLOR);
+  
 
 
 }
@@ -63,4 +77,115 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+body{
+    
+    background-color: var(--BACKGROUND-COLOR-BODY);
+    font-family: var(--FF);
+    color: var(--FONT-COLOR-PARAGRAPH);
+    font-weight: var(--FW);
+
+}
+.container{
+   
+    margin: 8% 33em;
+    background-color: var(--BACKGROUND-COLOR-CONTENT-BODY);
+    padding: 3em;
+    border-radius: 1.5em;
+}
+h1{
+    color: var(--FONT-COLOR-PARAGHRAPH-STRONG);
+    font-family: var(--FF-HEADINGS);
+    font-weight: var(--FW-TWO);
+    font-size: var(--FS-HEADING-ONE);
+    margin-bottom: 2rem;
+}
+strong{
+
+    font-weight: var(--FW-THREE);
+}
+.main__container__small{
+
+    background-color: var(--BACKGROUND-COLOR-CONTENT-SMALL);
+    border-radius: var(--BORDER-RADIUS);
+    padding: 2em 2em;
+    margin-bottom: 2rem;
+}
+.main__container__small > h3{
+    margin-bottom: 1rem;
+}
+
+
+h3{
+    color: var(--FONT-COLOR-HEADING-TWO);
+    font-weight: var(--FW-TWO); 
+  
+}
+h2{
+    color: var(--FONT-COLOR-HEADING);
+    font-family: var(--FF-HEADINGS);
+    font-weight: var(--FW-TWO);
+    margin-bottom: 1em;
+
+}
+
+.main__p{
+    margin-bottom: 2rem;
+}
+
+ul, ol{
+    list-style-position: inside;
+    padding-left: .5em;
+}
+
+
+
+.main__container__small > ul li:last-child {
+    margin-bottom: 0;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+.main__container__small > ul li::marker{
+    color: var(--FONT-COLOR-HEADING-TWO);
+}
+
+.ingredients > ul li::marker{
+    color: var(--FONT-COLOR-HEADING);
+}
+
+.instructions > ol li::marker{
+    color: var(--FONT-COLOR-HEADING);
+    font-weight: var(--FW-THREE);
+}
+
+span{
+    margin: 1.5em;
+}
+
+.ingredients{
+    margin-bottom: 1.5rem;
+}
+.instructions{
+    margin-bottom: 1.5rem;
+}
+
+.ingredients > ul {
+    padding-bottom: 1em;
+
+    border-bottom: var(--BORDR-BOTTEM-LINE);
+    
+
+}
+
+.instructions > ol{
+    padding-bottom: 1em;
+
+    border-bottom: var(--BORDR-BOTTEM-LINE);
+}
+
+.nutrition--p{
+    margin-bottom: 1.5rem;
+}
 
